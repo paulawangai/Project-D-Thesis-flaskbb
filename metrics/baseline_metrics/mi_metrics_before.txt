@@ -1,101 +1,101 @@
-flaskbb/auth/plugins.py - A
-flaskbb/auth/__init__.py - A
-flaskbb/auth/forms.py - A
-flaskbb/auth/views.py - A
-flaskbb/auth/services/registration.py - A
-flaskbb/auth/services/reauthentication.py - A
-flaskbb/auth/services/__init__.py - A
-flaskbb/auth/services/factories.py - A
-flaskbb/auth/services/activation.py - A
-flaskbb/auth/services/authentication.py - A
-flaskbb/auth/services/password.py - A
-flaskbb/cli/themes.py - A
-flaskbb/cli/plugins.py - A
-flaskbb/cli/users.py - A
-flaskbb/cli/translations.py - A
-flaskbb/cli/__init__.py - A
-flaskbb/cli/utils.py - A
-flaskbb/cli/main.py - A
-flaskbb/forum/models.py - A
-flaskbb/forum/__init__.py - A
-flaskbb/forum/forms.py - A
-flaskbb/forum/utils.py - A
-flaskbb/forum/locals.py - A
-flaskbb/forum/views.py - B
-flaskbb/management/plugins.py - A
-flaskbb/management/models.py - A
-flaskbb/management/__init__.py - A
-flaskbb/management/forms.py - A
-flaskbb/management/views.py - B
-flaskbb/plugins/models.py - A
-flaskbb/plugins/__init__.py - A
-flaskbb/plugins/spec.py - A
-flaskbb/plugins/utils.py - A
-flaskbb/plugins/manager.py - A
-flaskbb/user/plugins.py - A
-flaskbb/user/models.py - A
-flaskbb/user/__init__.py - A
-flaskbb/user/forms.py - A
-flaskbb/user/views.py - A
-flaskbb/user/services/update.py - A
-flaskbb/user/services/validators.py - A
-flaskbb/user/services/__init__.py - A
-flaskbb/user/services/factories.py - A
-flaskbb/utils/fields.py - A
-flaskbb/utils/database.py - A
-flaskbb/utils/translations.py - A
-flaskbb/utils/__init__.py - A
-flaskbb/utils/forms.py - A
-flaskbb/utils/requirements.py - A
-flaskbb/utils/http.py - A
-flaskbb/utils/settings.py - A
-flaskbb/utils/search.py - A
-flaskbb/utils/datastructures.py - A
-flaskbb/utils/populate.py - A
-flaskbb/utils/helpers.py - A
-flaskbb/utils/views.py - A
-flaskbb/app.py - A
-flaskbb/email.py - A
-flaskbb/markup.py - A
-tests/conftest.py - A
-tests/__init__.py - A
-tests/unit/test_deprecation.py - A
-tests/unit/test_email.py - A
-tests/unit/test_hideable_query.py - A
-tests/unit/__init__.py - A
-tests/unit/test_requirements.py - A
-tests/unit/test_pluginmanager.py - A
-tests/unit/test_forum_models.py - A
-tests/unit/auth/test_activation.py - A
-tests/unit/auth/test_authentication.py - A
-tests/unit/auth/test_validators.py - A
-tests/unit/auth/test_password.py - A
-tests/unit/auth/test_registration_processors.py - A
-tests/unit/auth/test_reauthentication.py - A
-tests/unit/auth/test_registration.py - A
-tests/unit/utils/__init__.py - A
-tests/unit/utils/test_translations.py - A
-tests/unit/utils/test_populate.py - A
-tests/unit/utils/test_http.py - A
-tests/unit/utils/test_helpers.py - A
-tests/unit/utils/test_settings.py - A
-tests/unit/utils/test_markup.py - A
-tests/unit/user/test_forms.py - A
-tests/unit/user/test_controllers.py - A
-tests/unit/user/test_update_settings.py - A
-tests/unit/user/test_update_password_handler.py - A
-tests/unit/user/test_update_details_handler.py - A
-tests/unit/user/test_update_email_handler.py - A
-tests/unit/user/test_update_validator.py - A
-tests/unit/forum/test_forum_utils.py - A
-tests/unit/tokens/test_serializer.py - A
-tests/unit/tokens/test_verifiers.py - A
-tests/endtoend/test_auth_views.py - A
-tests/fixtures/auth.py - A
-tests/fixtures/user.py - A
-tests/fixtures/settings_fixture.py - A
-tests/fixtures/__init__.py - A
-tests/fixtures/forum.py - A
-tests/fixtures/app.py - A
-tests/fixtures/plugin.py - A
-tests/fixtures/helpers.py - A
+flaskbb/auth/plugins.py - A (100.00)
+flaskbb/auth/__init__.py - A (100.00)
+flaskbb/auth/forms.py - A (100.00)
+flaskbb/auth/views.py - A (42.44)
+flaskbb/auth/services/registration.py - A (64.49)
+flaskbb/auth/services/reauthentication.py - A (85.02)
+flaskbb/auth/services/__init__.py - A (100.00)
+flaskbb/auth/services/factories.py - A (100.00)
+flaskbb/auth/services/activation.py - A (87.78)
+flaskbb/auth/services/authentication.py - A (67.90)
+flaskbb/auth/services/password.py - A (83.93)
+flaskbb/cli/themes.py - A (74.21)
+flaskbb/cli/plugins.py - A (62.76)
+flaskbb/cli/users.py - A (68.18)
+flaskbb/cli/translations.py - A (74.94)
+flaskbb/cli/__init__.py - A (100.00)
+flaskbb/cli/utils.py - A (66.37)
+flaskbb/cli/main.py - A (39.02)
+flaskbb/forum/models.py - A (21.22)
+flaskbb/forum/__init__.py - A (100.00)
+flaskbb/forum/forms.py - A (60.20)
+flaskbb/forum/utils.py - A (88.19)
+flaskbb/forum/locals.py - A (83.90)
+flaskbb/forum/views.py - B (17.52)
+flaskbb/management/plugins.py - A (100.00)
+flaskbb/management/models.py - A (76.23)
+flaskbb/management/__init__.py - A (100.00)
+flaskbb/management/forms.py - A (37.80)
+flaskbb/management/views.py - B (14.83)
+flaskbb/plugins/models.py - A (73.34)
+flaskbb/plugins/__init__.py - A (100.00)
+flaskbb/plugins/spec.py - A (100.00)
+flaskbb/plugins/utils.py - A (80.04)
+flaskbb/plugins/manager.py - A (65.13)
+flaskbb/user/plugins.py - A (100.00)
+flaskbb/user/models.py - A (41.48)
+flaskbb/user/__init__.py - A (100.00)
+flaskbb/user/forms.py - A (75.73)
+flaskbb/user/views.py - A (100.00)
+flaskbb/user/services/update.py - A (100.00)
+flaskbb/user/services/validators.py - A (77.10)
+flaskbb/user/services/__init__.py - A (100.00)
+flaskbb/user/services/factories.py - A (78.83)
+flaskbb/utils/fields.py - A (58.94)
+flaskbb/utils/database.py - A (55.57)
+flaskbb/utils/translations.py - A (71.66)
+flaskbb/utils/__init__.py - A (100.00)
+flaskbb/utils/forms.py - A (65.13)
+flaskbb/utils/requirements.py - A (43.16)
+flaskbb/utils/http.py - A (66.56)
+flaskbb/utils/settings.py - A (100.00)
+flaskbb/utils/search.py - A (100.00)
+flaskbb/utils/datastructures.py - A (100.00)
+flaskbb/utils/populate.py - A (48.36)
+flaskbb/utils/helpers.py - A (34.44)
+flaskbb/utils/views.py - A (100.00)
+flaskbb/app.py - A (51.10)
+flaskbb/email.py - A (100.00)
+flaskbb/markup.py - A (71.69)
+tests/conftest.py - A (100.00)
+tests/__init__.py - A (100.00)
+tests/unit/test_deprecation.py - A (68.31)
+tests/unit/test_email.py - A (77.57)
+tests/unit/test_hideable_query.py - A (55.22)
+tests/unit/__init__.py - A (100.00)
+tests/unit/test_requirements.py - A (47.41)
+tests/unit/test_pluginmanager.py - A (49.76)
+tests/unit/test_forum_models.py - A (21.64)
+tests/unit/auth/test_activation.py - A (54.10)
+tests/unit/auth/test_authentication.py - A (35.47)
+tests/unit/auth/test_validators.py - A (55.10)
+tests/unit/auth/test_password.py - A (60.50)
+tests/unit/auth/test_registration_processors.py - A (58.92)
+tests/unit/auth/test_reauthentication.py - A (44.03)
+tests/unit/auth/test_registration.py - A (46.96)
+tests/unit/utils/__init__.py - A (100.00)
+tests/unit/utils/test_translations.py - A (99.67)
+tests/unit/utils/test_populate.py - A (46.47)
+tests/unit/utils/test_http.py - A (72.04)
+tests/unit/utils/test_helpers.py - A (55.11)
+tests/unit/utils/test_settings.py - A (96.21)
+tests/unit/utils/test_markup.py - A (81.37)
+tests/unit/user/test_forms.py - A (43.58)
+tests/unit/user/test_controllers.py - A (21.80)
+tests/unit/user/test_update_settings.py - A (55.09)
+tests/unit/user/test_update_password_handler.py - A (53.91)
+tests/unit/user/test_update_details_handler.py - A (52.43)
+tests/unit/user/test_update_email_handler.py - A (51.84)
+tests/unit/user/test_update_validator.py - A (42.00)
+tests/unit/forum/test_forum_utils.py - A (73.14)
+tests/unit/tokens/test_serializer.py - A (55.17)
+tests/unit/tokens/test_verifiers.py - A (64.75)
+tests/endtoend/test_auth_views.py - A (66.15)
+tests/fixtures/auth.py - A (100.00)
+tests/fixtures/user.py - A (100.00)
+tests/fixtures/settings_fixture.py - A (100.00)
+tests/fixtures/__init__.py - A (100.00)
+tests/fixtures/forum.py - A (54.61)
+tests/fixtures/app.py - A (100.00)
+tests/fixtures/plugin.py - A (100.00)
+tests/fixtures/helpers.py - A (100.00)
