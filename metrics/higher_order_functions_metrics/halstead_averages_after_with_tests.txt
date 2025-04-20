@@ -1,0 +1,14 @@
+Average h1: 4.071428571428571
+Average h2: 23.714285714285715
+Average N1: 17.057142857142857
+Average N2: 31.542857142857144
+Average vocabulary: 27.785714285714285
+Average length: 48.6
+Average calculated_length: 140.05645556507164
+Average volume: 286.9189369763144
+Average difficulty: 2.507157537210222
+Average effort: 1774.3319997414712
+Average time: 98.57399998563729
+Average bugs: 0.09563964565877146
+Total files analyzed: 103
+Files with code: 70
