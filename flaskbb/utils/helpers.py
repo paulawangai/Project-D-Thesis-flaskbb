@@ -19,6 +19,7 @@ import time
 from datetime import datetime, timedelta
 from email import message_from_string
 from functools import wraps
+from fp_decorators.immutable import immutable
 
 import pkg_resources
 import requests
@@ -464,7 +465,7 @@ def _format_html_time_tag(datetime, what_to_display):
         )
     )
 
-
+@immutable
 def format_datetime(datetime):
     """Format the datetime for usage in templates.
 
@@ -473,7 +474,7 @@ def format_datetime(datetime):
     """
     return _format_html_time_tag(datetime, "date-and-time")
 
-
+@immutable
 def format_date(datetime):
     """Format the datetime for usage in templates, keeping only the date.
 

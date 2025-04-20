@@ -13,6 +13,7 @@ import inspect
 import warnings
 from abc import ABC, abstractproperty
 from functools import wraps
+from fp_decorators.immutable import immutable
 
 from flask_babelplus import gettext as _
 
@@ -47,7 +48,7 @@ class RemovedInFlaskBB3(FlaskBBDeprecation):
 
     version = (3, 0, 0)
 
-
+@immutable
 def deprecated(message="", category=RemovedInFlaskBB3):
     """
     Flags a function or method as deprecated, should not be used on
