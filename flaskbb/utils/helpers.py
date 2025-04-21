@@ -19,6 +19,7 @@ import time
 from datetime import datetime, timedelta
 from email import message_from_string
 from functools import wraps
+from fp_decorators.pure import pure
 
 import pkg_resources
 import requests
@@ -395,7 +396,7 @@ def get_online_users(guest=False):  # pragma: no cover
 
     return [to_unicode(u) for u in users]
 
-
+@pure
 def crop_title(title, length=None, suffix="..."):
     """Crops the title to a specified length
 
