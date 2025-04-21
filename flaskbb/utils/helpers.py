@@ -23,6 +23,8 @@ from fp_decorators.pure import pure
 
 from fp_decorators.immutable import immutable
 
+from fp_decorators.higher_order import higher_order, memoize, compose, pipe, curry, partial
+
 
 import pkg_resources
 import requests
@@ -478,6 +480,7 @@ def format_datetime(datetime):
     return _format_html_time_tag(datetime, "date-and-time")
 
 @immutable
+@higher_order(enhanced=True)
 def format_date(datetime):
     """Format the datetime for usage in templates, keeping only the date.
 
@@ -503,6 +506,7 @@ def format_timedelta(delta, **kwargs):
     return babel_format_timedelta(delta, locale=_get_user_locale(), **kwargs)
 
 
+@memoize(max_size=100)
 def time_since(time):  # pragma: no cover
     """Returns a string representing time since e.g.
     3 days ago, 5 hours ago.
